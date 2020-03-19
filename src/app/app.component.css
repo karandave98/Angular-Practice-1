@@ -1,0 +1,19 @@
+p {
+  font-family: Lato;
+}
+.centerText {
+  text-align: center;
+}
+.check-button{
+  text-align: right;
+  background-color: lightcyan;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-16{
+  font-size: 16px;
+}
+.work-btn{
+  cursor: pointer;
+}

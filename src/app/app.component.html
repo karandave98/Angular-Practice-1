@@ -1,0 +1,22 @@
+<div class = "container">
+  <input type ="number" [(ngModel)] = "num" (keyup)="numberChange(num)"/>
+  <div class="row font-18" >
+    <div class="col-sm-3 py-2" *ngFor = "let item of arrayOfDiv">
+     <div>
+        <div class="check-button pt-2">
+        <span (click)="addClicked(item)" class="px-1 work-btn" ><i class="fa fa-plus font-16" ></i></span>
+        <span (click)="deleteItem(item)" class="px-1 work-btn" ><i class="fa fa-times font-16"  ></i></span>
+        
+        </div>
+       <div class="centerText p-2" style="background-color: ghostwhite;">
+        {{item}}
+       </div>
+     </div>
+    </div>
+  </div>
+  <div class="card" *ngIf="isAnyButtonClicked">
+    <div class="card-body font-18 centerText">
+      You Clicked Number <strong> {{clickedItem}}</strong>
+    </div>
+  </div>
+</div>
